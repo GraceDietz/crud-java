@@ -11,12 +11,19 @@
           <a class="nav-link" href="<%=request.getContextPath()%>/index.jsp">Inicio</a>
         </li>
         <li class="nav-item">
-           <a class="nav-link" href="<%=request.getContextPath()%>/FindAllDepartamentoController">Listado</a>
+           <a class="nav-link" href="<%=request.getContextPath()%>/FindAllDepartamentoController">Listado Departamentos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<%=request.getContextPath()%>/nuevo.jsp">Nuevo Departamento</a>
         </li>
-       
+        <!-- agrego un item en nav para listar los empleados -->
+        <li class="nav-item">
+           <a class="nav-link" href="<%=request.getContextPath()%>/FindAllEmpleadoController">Listado Empleados</a>
+        </li>
+        <!-- agrego un item en nav para nuevo empleado -->
+        <li class="nav-item">
+          <a class="nav-link" href="<%=request.getContextPath()%>/nuevoEmpleado.jsp">Nuevo Empleado</a>
+        </li>
       </ul>
       <div class="d-flex w-50 justify-content-end"> 
 	      <form class="d-flex" action="<%=request.getContextPath()%>/SearchDepartamentoController">

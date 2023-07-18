@@ -1,20 +1,23 @@
 package ar.com.codoacodo.domain;
 
-
-
 public class Empleado {
-	private Long dni;
+	private Long dni; // private actua como public para la clase misma, pero invisible para el resto
 	private String nombre;
 	private String apellido;
-	private Departamento depto;
+	private Long dpto_id;
 	
-	public Empleado(Long dni, String nombre, String apellido, Departamento depto) {
+	// alt +shift +s para generar automaticamente los get y set y tambien el constructor y el tostring de forma automatica
+	
+	
+	
+	public Empleado (Long dni, String nombre, String apellido, Long dpto_id) {
 		
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.depto = depto;
+		this.dpto_id = dpto_id;
 	}
+
 
 	public Long getDni() {
 		return dni;
@@ -40,21 +43,19 @@ public class Empleado {
 		this.apellido = apellido;
 	}
 
-	public Departamento getDepto() {
-		return depto;
+	public Long getDpto_id() {
+		return dpto_id;
 	}
 
-	public void setDepto(Departamento depto) {
-		this.depto = depto;
+	public void setDpto_id (Long dpto_id) {
+		this.dpto_id = dpto_id;
 	}
 
 	@Override
 	public String toString() {
-		return "Empleado [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", depto=" + depto + "]";
+		return "Empleado [dni=' + dni + ', nombre=' + nombre + ', apellido=' + apellido + ', dpto_id=' + dpto_id + ']";
 	}
 	
-	
-	
-	
-	
+
 }
+

@@ -20,7 +20,7 @@
 		
 		
 		<main class="container mt-5">
-			<h1>Editar Departamento</h1>
+			<h4>Editar Departamento</h4>
 			
 			<div class="row mt-5">
 				<div class="col-12">
