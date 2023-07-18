@@ -9,18 +9,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">  
 	</head>
 	<body>
-	   <div class="container bg-light">
+	   <div class="container bg-info">
 	   
 	   		<jsp:include page="navbar.jsp"/>
 	   </div>
 		
 		
 		<main class="container mt-5">
-			<h1>Nuevo Empleado</h1>
+			<h4>Nuevo Empleado</h4>
 			
 			<div class="row mt-5">
 				<div class="col-12">
-					<form class="row g-3 needs-validation" 
+					<form class="row g-3 needs-validation bg-info" 
 						action="<%=request.getContextPath()%>/CreateEmpleadoController"
 						method="POST">
 					  <div class="col-md-3">
@@ -75,7 +75,7 @@
 					  </div>
 					 
 					  <div class="col-12">
-					    <button class="btn btn-primary" type="submit">Nuevo</button>
+					    <button class="btn btn-secondary mt-2 mb-2" type="submit">Nuevo</button>
 					    <a href="<%=request.getContextPath()%>/FindAllEmpleadoController" class="btn btn-success">Cancelar</a>
 					  </div>
 					</form>

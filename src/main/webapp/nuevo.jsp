@@ -64,7 +64,8 @@
 					 
 					  <div class="col-12">
 					    <button class="btn btn-secondary mt-2 mb-2" type="submit">Nuevo</button>
-					  </div>
+					 
+					 <a href="<%=request.getContextPath()%>/FindAllDepartamentoController" class="btn btn-success">Cancelar</a> </div>
 					</form>
 				</div>
 			</div>

@@ -19,7 +19,7 @@
 	   </div>
 		
 		
-		<main class="container mt-5">
+		<main class="container mt-5"> 
 			<h4>Editar Empleado</h4>
 			
 			<div class="row mt-5">
@@ -82,7 +82,9 @@
 					  </div>
 					</form>
 				</div>
+				
 			</div>
+			
 		</main>
 	</body>
 </html>
